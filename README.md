@@ -7,7 +7,8 @@
     - Creazione di un segnaposto, caratterizzato da un titolo e una descrizione<br>
     - Visualizzazione di tutti i segnaposti creati in ordine decrescente in base alla data di ultima modifica<br>
     - Gestione dei segnaposti potendoli modificare ed eliminare<br>
-    - Gestione di una notifica locale nel caso in cui l'utente entra (o esce) nella regione di un segnaposto
+    - Gestione di una notifica locale nel caso in cui l'utente entra (o esce) nella regione di un segnaposto<br>
+	- Sono disponibili delle impostazioni per modificare il punto di partenza della mappa, il tipo di mappa e il colore del segnaposto
   </p>
 
   <h2>MyCurrency:</h2>

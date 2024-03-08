@@ -1,6 +1,6 @@
 <html>
 <body>
-   <h3>Progetti Richiesti:</h3>
+   <h1>Progetti Richiesti:</h1>
   <h2>PlaceReminderMap:</h2>
   <p>
     PlaceReminderMap è stato sviluppato in Android e presenta le seguenti funzionalità:<br>

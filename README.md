@@ -1,4 +1,4 @@
-Ho condiviso entrambi i progetti richiesti.
+Ho condiviso entrambi i progetti richiesti. <br>
 PlaceReminderMap è stato sviluppato in android e presenta le seguenti funzionalità:
 	Creazione di un segnaposto, caratterizzato da un titolo e una descrizione
 	Visualizzazione di tutti i segnaposti creati in ordine decrescente in base alla data di ultima modifica

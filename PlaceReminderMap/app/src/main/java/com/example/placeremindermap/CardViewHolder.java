@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class CardViewHolder extends RecyclerView.ViewHolder {
+public class CardViewHolder extends RecyclerView.ViewHolder{
     private final Context context;
     private final Activity activity;
     private final FragmentManager fragmentManager;

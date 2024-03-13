@@ -35,7 +35,7 @@ public class NotificationHelper extends ContextWrapper {
     private String CHANNEL_NAME = "High priority channel";
     private String CHANNEL_ID = "com.example.placeremindermap" + CHANNEL_NAME;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
+    @RequiresApi(api = Build.VERSION_CODES.O) // può essere eseguito solo su dispositivi con Android Oreo (API 26) o versioni successive
     private void createChannels() {
         NotificationChannel notificationChannel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH);
         notificationChannel.enableLights(true);

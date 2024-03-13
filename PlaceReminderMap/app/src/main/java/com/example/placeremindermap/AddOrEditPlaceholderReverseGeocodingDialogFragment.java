@@ -46,14 +46,14 @@ public class AddOrEditPlaceholderReverseGeocodingDialogFragment extends DialogFr
         TextView titleTextView = view.findViewById(R.id.titleTextView);
 
 
-        Button addButton = view.findViewById(R.id.addButton);
-        addButton.setOnClickListener(v -> handlerPlaceholder());
+        Button addOrEditButton = view.findViewById(R.id.addButton);
+        addOrEditButton.setOnClickListener(v -> handlerPlaceholder());
 
         //for edit Placeholder
         if(poiDescriptor != null)
         {
             titleTextView.setText(R.string.EDIT_PLACEHOLDER);
-            addButton.setText(R.string.EDIT);
+            addOrEditButton.setText(R.string.EDIT);
             nameEditText.setText(poiDescriptor.getName());
             descriptionEditText.setText(poiDescriptor.getDescription());
             latitudeEditText.setText(String.valueOf(poiDescriptor.getLat()));
@@ -131,10 +131,4 @@ public class AddOrEditPlaceholderReverseGeocodingDialogFragment extends DialogFr
             ((MainActivity) requireActivity()).replaceFragmentWithSavedPlaceholderFragment();
         }
     }
-
-
-
-
-
-
 }

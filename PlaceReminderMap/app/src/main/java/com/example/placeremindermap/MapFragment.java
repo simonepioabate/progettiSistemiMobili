@@ -47,11 +47,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
 
     public final static String TAG = "MapFragment";
     private List<PoiDescriptor> poiDescriptorList = new ArrayList<>();
-
     private GoogleMap mMap;
     private Map<Marker, PoiDescriptor> poiMap;
     private AutoCompleteTextView autoCompleteTextView;
-
 
     private double lat;
     private double lng;
@@ -68,7 +66,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
 
     private static final int BACKGROUND_LOCATION_ACCESS_REQUEST_CODE = 10002;
 
-
     public MapFragment() {
     }
 
@@ -81,10 +78,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         geofencingClient = LocationServices.getGeofencingClient(requireActivity());
         geofenceHelper = new GeofenceHelper(requireContext());
-
     }
 
 
@@ -194,7 +189,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         }
     }
 
-
     private void enableUserLocation() {
 
         if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
@@ -226,7 +220,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
             return;
         }
         Geofence geofence = geofenceHelper.getGeofence(poiDescriptor, GEOFENCE_RADIUS,
-                Geofence.GEOFENCE_TRANSITION_ENTER | Geofence.GEOFENCE_TRANSITION_DWELL | Geofence.GEOFENCE_TRANSITION_EXIT);
+                Geofence.GEOFENCE_TRANSITION_ENTER | Geofence.GEOFENCE_TRANSITION_EXIT);
         GeofencingRequest geofencingRequest = geofenceHelper.getGeofencingRequest(geofence);
         PendingIntent pendingIntent = geofenceHelper.getPendingIntent();
 

@@ -60,23 +60,6 @@ public class PoiDescriptor {
         this.lng = lng;
     }
 
-    @NonNull
-    @Override
-    public String toString() {
-        return name + ";" + description +
-                ";" + lat + ";" + lng + ";"
-                + date + ";" + lastUpdate + "\n";
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        PoiDescriptor that = (PoiDescriptor) o;
-        return Double.compare(that.lat, lat) == 0 &&
-                Double.compare(that.lng, lng) == 0;
-    }
-
     public String getDate() {
         return date;
     }
@@ -88,4 +71,22 @@ public class PoiDescriptor {
     public void setLastUpdate(String modifyDate) {
         this.lastUpdate = modifyDate;
     }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return name + ";" + description +
+                ";" + lat + ";" + lng + ";"
+                + date + ";" + lastUpdate + "\n";
+    }
+
+    /*
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PoiDescriptor that = (PoiDescriptor) o;
+        return Double.compare(that.lat, lat) == 0 &&
+                Double.compare(that.lng, lng) == 0;
+    }*/
 }

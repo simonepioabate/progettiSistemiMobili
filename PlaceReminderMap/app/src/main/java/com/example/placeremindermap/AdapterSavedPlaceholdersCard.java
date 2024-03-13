@@ -13,14 +13,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class AdapterSavedPlaceholdersCard extends RecyclerView.Adapter<CardViewHolder> {
-    private final List<PoiDescriptor> dataList;
+    private final List<PoiDescriptor> poiDescriptorList;
     private final Context context;
     private final Activity activity;
     private final FragmentManager fragmentManager;
 
-    public AdapterSavedPlaceholdersCard(List<PoiDescriptor> dataList, Context context, Activity activity, FragmentManager fragmentManager) {
-        this.dataList = dataList;
-        this.dataList.sort(new HandlerDate.DateComparator());
+    public AdapterSavedPlaceholdersCard(List<PoiDescriptor> poiDescriptorList, Context context, Activity activity, FragmentManager fragmentManager) {
+        this.poiDescriptorList = poiDescriptorList;
+        this.poiDescriptorList.sort(new HandlerDate.DateComparator());
 
         //to manage the buttons of each card
         this.context = context;
@@ -37,13 +37,13 @@ public class AdapterSavedPlaceholdersCard extends RecyclerView.Adapter<CardViewH
 
     @Override
     public void onBindViewHolder(CardViewHolder holder, int position) {
-        PoiDescriptor item = dataList.get(position);
+        PoiDescriptor item = poiDescriptorList.get(position);
         holder.bind(item);
     }
 
     @Override
     public int getItemCount() {
-        return dataList.size();
+        return poiDescriptorList.size();
     }
 
 

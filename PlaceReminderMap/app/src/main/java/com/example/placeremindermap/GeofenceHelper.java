@@ -24,7 +24,7 @@ public class GeofenceHelper extends ContextWrapper {
     public GeofencingRequest getGeofencingRequest(Geofence geofence) {
         return new GeofencingRequest.Builder()
                 .addGeofence(geofence)
-                .setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER)
+                .setInitialTrigger(geofence.getTransitionTypes())
                 .build();
     }
 

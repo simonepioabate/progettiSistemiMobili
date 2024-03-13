@@ -21,7 +21,6 @@
 @property (strong, nonatomic) CurrencyConverter *currencyConverter;
 @property (nonatomic, strong) DateManager *date;
 
-@property (nonatomic, strong) NSArray *dataArray; // Array to hold your dropdown options
 @property (nonatomic, strong) NSArray *tableData;
 @property (nonatomic, strong) NSArray *tableDataCurrency;
 

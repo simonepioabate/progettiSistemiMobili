@@ -17,8 +17,8 @@
 }
 
 
-- (instancetype)init{
-    return [ self initWithValue:@{    //  key-value
+- (instancetype)init{ //  key-value
+    return [ self initWithValue:@{     //oss: sarebbero bandiere su mac
                 @"AED": @"🇦🇪",
                 @"AFN": @"🇦🇫",
                 @"ALL": @"🇦🇱",

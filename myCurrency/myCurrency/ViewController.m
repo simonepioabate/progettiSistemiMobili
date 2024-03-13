@@ -18,8 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *fromCurrencyBtn;
 @property (weak, nonatomic) IBOutlet UIButton *toCurrencyBtn;
 
-
-@property (nonatomic, strong) NSArray *data;
 @property (strong, nonatomic) CountryCurrencyDictionaryManager *countryCurrencyDictionaryManager;
 @property (nonatomic, strong) NSDictionary *countryCurrencies;
 

@@ -14,4 +14,3 @@
 @property (strong, nonatomic) CurrencyConverter *currencyConverter;
 
 @end
-

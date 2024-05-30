@@ -1,11 +1,11 @@
 <html>
 	<body>
-		<h1>MyCurrency </h1>
-		<h2>Video</h1>
+		<h1>Video</h1>
 			<p>
 			Entrambi i video sono stati caricati esclusivamente su github, questa decisione è<br>
 			stata presa per non sovraccaricare troppo il file .zip inviato tramite Elly.
-			</P>
+			</p>
+		<h1>MyCurrency </h1>
 		<h2>API KEY</h2>
 			<p>
 			La chiave all'interno del progetto scadrà dopo una settimana dalla sua creazione,<br>

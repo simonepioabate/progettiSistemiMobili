@@ -1,8 +1,7 @@
 <html>
 	<body>
 		<h1>MyCurrency </h1>
-		<h1>API KEY<h1>
-			<h1>API KEY<h1>
+		<h1>API KEY</h1>
 			    la chiave all'interno del progetto scadrà dopo una settimana dalla sua creazione,<br>
 			    ossia il 05/06/2024. Per creare una nuova chiave in modo completamente gratuito bisogna recarsi su:<br>
 				- https://www.fastforex.io/ <br>
